@@ -1,0 +1,24 @@
+/*======================= CONSTRAINTS - KISITLAMALAR ======================================
+               
+    NOT NULL - Bir Sütunun  NULL içermemesini garanti eder. 
+
+    UNIQUE - Bir sütundaki tüm deðerlerin BENZERSÝZ olmasýný garanti eder.  null kabul eder, hatta birden fazla null deðer girebiliriz
+
+    PRIMARY KEY - Bir sütünün NULL içermemesini ve sütundaki verilerin 
+                  BENZERSÝZ olmasýný garanti eder.(NOT NULL ve UNIQUE birleþimi gibi)
+
+    FOREIGN KEY - Baþka bir tablodaki Primary Key’i referans göstermek için kullanýlýr. 
+                  Böylelikle, tablolar arasýnda iliþki kurulmuþ olur. 
+
+    CHECK - Bir sutundaki tüm verilerin belirlenen özel bir þartý saðlamasýný garanti eder. 
+    soldan tablo silerken tablonun kapalý olmasý lazým*/
+     --ORNEK1- NOT NULL
+   -- ogrenciler tablosu olusturalim ve id field ýný bos birakilamaz yapalim
+    
+  CREATE TABLE ogrenciler (
+   id char(4) not null,
+  isim varchar(50),
+  not_ort number(4,2), --98,55
+  kayit_tarihi date 
+  
+  );
